@@ -51,7 +51,7 @@ print(raices)
 #  return()
 #}
 
-#creando una función para realizar el ejercicio anterior
+#creando una funci?n para realizar el ejercicio anterior
 #generando un registro de todas las llamadas/calculos que se han realizado
 
 calcularRaices = function(coef){
@@ -75,12 +75,12 @@ calcularRaices = function(coef){
 calcularRaices(coef=c(16,-5,6))
 calcularRaices(coef=c(-9,1,-12))
 calcularRaices(coef=c(-1,101,-100))
-#otorga el mismo resultado pero con el uso de una función creada
-#cuando se ejecuta un código más de dos veces es mejor implementarlo en una función
+#otorga el mismo resultado pero con el uso de una funci?n creada
+#cuando se ejecuta un c?digo m?s de dos veces es mejor implementarlo en una funci?n
 #mayor practicidad para resolver problemas
 
 
-#Crear función para graficar números aleatorios
+#Crear funci?n para graficar n?meros aleatorios
 
 graficarNumeros = function(n, min, max, col, pch){
   plot.new()
@@ -137,7 +137,7 @@ graficarNumeros2(n=10, min=-15, max=50, col=c("blue", "purple"), pch=1)
 graficarNumeros2(n=100, min=-10, max=50, col=c("blue", "purple"), pch=10)
 
 
-##simplificando la función otorgándole valores por defecto a los argumentos innecesarios
+##simplificando la funci?n otorg?ndole valores por defecto a los argumentos innecesarios
 graficarNumeros3 = function(n, min=-1, max=+1, col=c("blue", "red"), pch=19){
   plot.new()
   plot.window(xlim=c(min, max), ylim=c(min,max))
@@ -184,14 +184,14 @@ graficarNumeros4 = function(n, min=-1, max=+1, col=c("blue", "red"),...){
 
 graficarNumeros4(n=1000, cex=1.5)
 graficarNumeros4(n=1000, pch=14)
-##función wrappers
+##funci?n wrappers
 
 graficarNumeros4(n=1000, col=c("green", "orange"))
 graficarNumeros4(n=100, col=c("green", "orange"))
 graficarNumeros4(n=10, col=c("green", "orange"))
 graficarNumeros4(n=10000, col=c("green", "orange"))
 
-##acá n es lo que podemos cambiar
+##ac? n es lo que podemos cambiar
 nuevaGraficanumeros=function(n,col=c("green", "orange"),...){
   graficarNumeros4(n=n,col=col,...)
   
@@ -201,7 +201,7 @@ nuevaGraficanumeros=function(n,col=c("green", "orange"),...){
 nuevaGraficanumeros(n=1000) ##este es un wrapper
 
 ?read.csv
-##read.csv es un wrapper de la función read.table y tiene específicos valores
+##read.csv es un wrapper de la funci?n read.table y tiene espec?ficos valores
 ##por defecto
 
 #read.table(file, header = FALSE, sep = "", quote = "\"'",
@@ -229,8 +229,8 @@ for (i in 1:n)
 print(factorial)
 
 n=-2.3
-if (n<0) stop("Factorial no definido para números negativos")
-if(n%%1!=0) warning("Factorial no definido para números no enteros")
+if (n<0) stop("Factorial no definido para n?meros negativos")
+if(n%%1!=0) warning("Factorial no definido para n?meros no enteros")
 
 if (n=0){
    factorial=1
@@ -243,7 +243,7 @@ if (n=0){
 return(factorial)
 
 factorial=function(n){
-  if (n<0) stop("Factorial no definido para números negativos")
+  if (n<0) stop("Factorial no definido para n?meros negativos")
   if (n=0){
     factorial=1
   } else {
@@ -255,8 +255,32 @@ factorial=function(n){
   return(factorial)
 }
 
-##items evaluados en presentación
+##items evaluados en presentaci?n
 ##
+
+
+# pregunta1 ---------------------------------------------------------------
+
+
+# Tercer Examen de ProgramaciÃ³n CientÃ­fica --------------------------------
+
+
+# 2017 --------------------------------------------------------------------
+
+
+# Nombre: -----------------------------------------------------------------
+
+
+# IntroducciÃ³n ------------------------------------------------------------
+
+
+# Pre-procesamiento -------------------------------------------------------
+
+
+# AnÃ¡lisis ----------------------------------------------------------------
+
+
+# Post-procesamiento ------------------------------------------------------
 
 
 
